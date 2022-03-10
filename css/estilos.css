@@ -30,7 +30,7 @@ header .menu {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex-direction: column;
+/*     flex-direction: column; */
     max-height: 150px;
 }
 header .menu a {
@@ -38,7 +38,7 @@ header .menu a {
     color:#ae63e4;
     padding: 10px;
     margin: 0 10px;
-    min-width: 10%;
+    width: 10%;
     text-align: center;
     border: 1px solid transparent;
 }
@@ -110,13 +110,14 @@ header .imagen .seccion {
 
 /*---- MEDIA QUERYS ---- */
 /* query de header */
-@media screen and (max-width: 954px) {
+@media screen and (max-width: 996px) {
     header .menu {
-        justify-content: space-between;
+        justify-content: center;
+        flex-direction: column;
     }
     header .menu a {
         /* padding: 10px 0; */
-        width: 20%;
+        width: 30%;
 /*         border: 1px solid transparent;
  */    }
     header .menu a:hover {
@@ -137,6 +138,10 @@ header .imagen .seccion {
 }
 
 @media screen and (max-width: 605px) {
+    header .titulo {
+        margin: auto;
+        text-align: center;
+    }
     header .menu a {
         width: 25%;
     }
@@ -147,7 +152,7 @@ header .imagen .seccion {
 
 @media screen and (max-width: 440px) {
     .main .galeria .card {
-        width: 100%;
+        width: 50%;
         margin: 10px 50px 20px 50px;
     }
 }
